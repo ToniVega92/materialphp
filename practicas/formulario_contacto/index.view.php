@@ -15,15 +15,12 @@
 	
 <input type="text" class="form-control" name="nombre" placeholder="Nombre: " value="" id="nombre">
 <input type="email" class="form-control" name="correo" placeholder="Correo: " value="" id="correo">
-<textarea name="mensaje" class="form-control" placeholder="Mensaje..." id="mensaje"></textarea>
+<textarea name="mensaje" class="form-control" placeholder="Mensaje:" id="mensaje"></textarea>
+
 
 <input type="submit" name="submit" id="submit" class="btn btn-primary" value="Enviar Correo">
 </form>
 
 </div>
-
-
-
-
 </body>
 </html>
