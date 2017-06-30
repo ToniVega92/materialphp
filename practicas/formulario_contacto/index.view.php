@@ -13,13 +13,16 @@
 	
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 	
-<input type="text" class="form-control" name="nombre" placeholder="Nombre: " value="" id="nombre">
+<input type="text" class="form-control" name="nombre" placeholder="Nombre: " value="<?php if (!$enviado && isset($nombre) ) {echo $nombre;} ?>" id="nombre">
+<!-- Con la condición en el value  se comprueba si enviado es falso pero  si el nombre está seteado, por tanto si esto ocurre el nombre no se borrará-->
 
 
-<input type="email" class="form-control" name="correo" placeholder="Correo: " value="" id="correo">
+<input type="email" class="form-control" name="correo" placeholder="Correo: " value="<?php if (!$enviado && isset($correo)) { echo $correo;
+	# code...
+} ?>" id="correo">
 
 
-<textarea name="mensaje" class="form-control" placeholder="Mensaje:" id="mensaje"></textarea>
+<textarea name="mensaje" class="form-control" placeholder="Mensaje:" id="mensaje" "><?php if (!$enviado && isset($mensaje)) { echo $mensaje;} ?></textarea>
 
 <?php if (!empty($errores)): ?>
 	<div class="alert error">

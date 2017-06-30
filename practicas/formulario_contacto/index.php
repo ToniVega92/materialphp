@@ -33,6 +33,30 @@ if (!empty($correo)) {
 		$errores .= 'Por favor ingresa un correo <br/>';
 	}
 
+if (!empty($mensaje)) {
+	$mensaje = htmlspecialchars($mensaje);
+	$mensaje = trim($mensaje);
+	$mensaje = stripcslashes($mensaje);
+
+	# code...
+} else {
+	$errores .= 'Por favor ingresa el mensaje';
+}
+
+if (!$errores) {
+	$enviar_a = 'tunombre@correo.com';
+	$asunto = 'Correo enviado desde mi página';
+	$mensaje_preparado = "De: $nombre \n";
+	$mensaje_preparado .= "Correo: $correo \n";
+	$mensaje_preparado .= "Mensaje" . $mensaje;
+
+	//mail($enviar_a, $asunto, $mensaje_preparado);
+
+	$enviado = 'true';
+	# code...
+}
+
+
 }
 
 require 'index.view.php';
