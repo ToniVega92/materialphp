@@ -37,3 +37,5 @@ p {font-size: <?php echo $tamano; ?>;}
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio numquam sed saepe consequuntur, commodi incidunt tempore atque fugit vero! Modi eos nesciunt dolore, reiciendis consectetur eius deserunt quia impedit laboriosam.</p>
 </body>
 </html>
+
+
