@@ -28,22 +28,34 @@
 </div>
 
 
+
+
+
+<?php if (!empty($errores)): ?>
+
+
+	<div class="error">
+		
+<ul>
+	
+<?php echo $errores; ?>
+
+</ul>
+
+	</div>
+	
+<?php endif ?>
+
+
+
+
 </form>
 
 <p class="texto-registrate">¿ Aún no tienes cuenta ?
 
-<a href="registrate.php">Iniciar Sesión</a>
+<a href="registrate.php">Registrarse</a>
 
 </p>
-
-
-
-
-
-
-
-
-
 	</div>
 </body>
 </html>
