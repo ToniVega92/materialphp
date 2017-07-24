@@ -7,7 +7,7 @@
 
 
 
-<?php foreach ($posts as $post): ?>
+<?php foreach ($resultados as $post): ?>
 
 	<div class="post">
 		<article>
@@ -27,7 +27,7 @@
 	
 <?php endforeach ?>
 		
-	
+	</div>
 
 
 

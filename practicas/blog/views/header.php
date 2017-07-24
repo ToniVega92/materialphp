@@ -27,7 +27,7 @@
 
 
 <!-- CSS STYLE -->
-<link rel="stylesheet" href="<?php echo RUTA;?>css/style.css">
+<link rel="stylesheet" href="<?php echo RUTA;?>/css/style.css">
 
 
 
@@ -38,15 +38,7 @@
 
 </head>  <!-- HEAD END-->
 
-
-
-
-
-
 <body>
-	
-
-
 
   <header>
 	
@@ -55,7 +47,7 @@
 	
 			<div class ="logo izquierda">
 		
-				<p> <a href="#"> ToniS BLOG </a> </p>
+				<p> <a href="<?php echo RUTA; ?>"> ToniS BLOG </a> </p>
 
 			</div>
 	
@@ -69,13 +61,13 @@
 				</form>
 			
 
-			<nav class="menu">
-				<ul>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#">Contacto <i class="icono fa fa-envelope"></i></a></li>
-				</ul>
-			</nav>
+					<nav class="menu">
+						<ul>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#">Contacto <i class="icono fa fa-envelope"></i></a></li>
+						</ul>
+					</nav>
 
 
 			</div>
